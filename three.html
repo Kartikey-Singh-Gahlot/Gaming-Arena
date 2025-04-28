@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toss The Coin</title>
+
+    <link rel="stylesheet" href="three.css">
+   
+
+</head>
+<body>
+
+    <audio id="sound">
+            <source src="audio/flippingsound.mp3" >
+    </audio>
+
+    <div id="brdr">
+
+        <h1 id="headng">Choose your Option</h1>
+         <div id="coinstrip">
+
+                  <div id="front" class="coin">
+
+                       <h1 id="face">Heads</h1>
+
+                  </div>
+
+         </div>
+
+         
+
+         <div id="buttonstrip">
+
+                  <button onclick="choosen('Heads')" class="control">
+                          Heads
+                  </button>
+
+                  <button id="control" class="control">
+                          Flip
+                  </button>
+
+                  <button onclick="choosen('Tales')" class="control">
+                          Tales
+                  </button>
+
+         </div>
+        
+    </div>
+
+
+    <script src="three.js">         
+    </script>
+
+</body>
+</html>

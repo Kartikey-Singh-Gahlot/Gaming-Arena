@@ -1,0 +1,267 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: linear-gradient(45deg, #000428,#23074d,#000428); 
+}
+
+#heading{
+   font-size: 50px;
+   color: white;
+   text-shadow: 10px 10px 10px black;
+   font-weight: lighter;
+   width: 100%;
+   text-align: center;
+   box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+header{
+  z-index: 10;
+  height: fit-content;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+header nav{
+  display: flex;
+  justify-content: right;
+  padding:10px 10px 0px 0px;
+}
+
+
+
+header nav ul{
+  list-style-type: none;
+  margin: 0px 20px 0px 10px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.363);
+  border: 1px solid rgba(255, 255, 255, 0.215);
+  box-sizing: border-box;
+  box-shadow: 10px 10px 20px black;
+  height: fit-content;
+  width: fit-content;
+  border-radius:5px;
+}
+
+
+header nav ul li{
+  padding: 5px 25px 5px 25px;
+  color: white;
+  font-size: 20px;
+  font-family: "Orbitron";
+}
+
+li:hover{
+  background-color: #c31431e0;
+}
+
+.mobileContainer{
+  display: none;
+  margin: 0px 0px 0px 0px ;
+}
+
+.mobileContainer hr{
+  
+  height: 1px;
+  border: 1px solid rgb(249, 249, 249);
+  box-sizing: border-box;
+  width: 30px;
+}
+.lines{
+  transition: 200ms ease-in-out;
+}
+
+
+#revealstip{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.opton02{
+    position: relative;
+    height: 120px;
+    width: 200px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 200ms ease-in-out;
+    background-size: contain;
+    background-position: center center;
+  
+}
+
+
+#contentBox{
+   box-sizing: border-box;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: fit-content;
+   box-sizing: border-box;
+   width: 100%;
+   height: 100vh;
+   gap: 50px;
+
+}
+
+#selectedstrip{
+    width: 100%;
+    height: fit-content;
+    top:15%;
+    display:flex;
+    justify-content: center;
+}
+
+#screen{
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black inset, -10px -10px 10px inset;
+    outline: 1px solid rgba(255, 255, 255, 0.136);
+    transition: 200ms ease-in-out;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(18, 88, 9, 0.899);
+    animation-name: none;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+}
+
+@keyframes shaking{
+  from {transform: rotateY(0deg);   background-color: black;}
+  to   {transform: rotateY(720deg); background-color: rgba(18, 88, 9, 0.899);}
+}
+
+#optionstrip{
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    transition: 300ms ease-in-out;
+    justify-content: space-evenly;
+}
+
+#buttonstrip{
+    width: 100%;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#buttonstrip h1{
+  color: white;
+}
+
+button{
+    height: 40px;
+    width: 100px;
+    box-sizing: border-box;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    border: 1px solid rgba(255, 255, 255, 0.121);
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px black, -10px -10px 20px black;
+}
+
+.opton{
+   font-size: 50px;
+   color: white;
+   text-shadow: 5px 5px 5px black;
+   text-align: center;
+   border-radius: 20px;
+   transition: 200ms ease-in-out;
+   box-shadow: 10px 10px 20px black, -10px -10px 20px black;
+   padding: 0px 0px 0px 0px;
+   position: absolute;
+   width: 100%;
+   height: inherit;
+   background-color: #c31432;
+   border: 1px solid rgba(255, 255, 255, 0.553);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.opton:hover{
+  transform: scale(1.1);
+  
+}
+
+button:hover{
+  background-color: aqua;
+  color: black;
+}
+
+
+@media screen and (max-width:780px) {
+  header nav ul{
+    display: none;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+  }
+
+  header nav ul li{
+    margin: 10px;
+    width: 60vw;
+  }
+
+  header nav{
+   flex-direction: column;
+   align-items: end;
+  }
+
+  .mobileContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20px;
+    top: 10px;
+  }
+  .opton02{
+    height: 100px;
+    width: 120px;
+  }
+  .opton{
+    font-size: 20px;
+  }
+  button{
+    font-size: 20px;
+  }
+  .scoreBoard{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  #heading{
+    font-size: 30px;
+  }
+}
+
+
+
+

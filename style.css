@@ -1,0 +1,356 @@
+/*-------------------- UNIVERSAL DECLARATION -------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Orbitron";
+    word-spacing: 5px;
+    color:rgba(255, 255, 255, 0.842);
+}
+
+body{
+    background: linear-gradient( 90deg,black,rgb(15, 15, 79), black);
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+}
+
+.pages{
+    width: 100%;
+    height: fit-content;
+}
+
+.pageHeading{
+    color: rgba(240, 248, 255, 0);
+    text-shadow: 
+    0 0 20px rgba(255, 238, 1, 0.279), 
+    0 0 40px rgba(216, 61, 9, 0.949);
+    font-size: 50px;
+    -webkit-text-stroke: 1px white; 
+    font-size: 40px;
+    width: fit-content;
+    text-align: left;
+    margin: 50px 0px 50px 0px;
+    padding: 0px 0px 0px 30px;
+    box-sizing: border-box;
+
+}
+
+.pageHeading:hover{
+   text-shadow:  0 0 20px rgb(13, 135, 160), 0 0 40px rgba(9, 16, 216, 0.949);
+}
+
+
+
+/*-------------------- UNIVERSAL DECLARATION -------------------*/
+
+
+
+
+/*-------------------- NAVBAR DECLARATION  -------------------*/
+
+
+header{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    justify-content: space-between;
+    
+}
+
+
+header img{
+    height: 50px;
+    margin: 10px 0px 0px 10px ;
+}
+
+
+header nav{
+ width: fit-content;
+ height: fit-content;
+ margin: 0px 20px 0px 0px;
+ z-index: -5;
+ 
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    background: linear-gradient(90deg, rgb(6, 7, 60),rgb(146, 8, 123),rgb(10, 139, 231));
+    width: fit-content;
+    padding: 0px 30px 0px 30px ;
+    border-radius: 50px 0px 50px 0px;
+    box-shadow:  10px 10px 50px black;
+    border: 1px solid rgba(244, 244, 244, 0.347);
+
+}
+
+header nav ul li{
+    padding: 5px 30px 5px 30px;
+    font-size: 20px;
+    color: white;
+    border-left: 1px solid rgba(255, 255, 255, 0.325);
+    border-right: 1px solid rgba(255, 255, 255, 0.325);
+}
+
+header nav ul li:hover{
+      background-color: rgba(239, 235, 235, 0.248);
+      color: black;
+}
+
+
+
+
+/*-------------------- NAVBAR DECLARATION  -------------------*/
+
+
+
+/*-------------------- FIRST PAGE DECLARATION -------------------*/
+
+#firstPage{
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+
+#firstPage video{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 1px solid rgba(245, 245, 245, 0.19);
+    box-shadow: 20px 20px 200px rgb(103, 8, 108);
+}
+
+
+
+#firstPage #homeHeading{
+    width: 100%;
+    margin: 50px 0px 0px 0px;
+    color: rgba(240, 248, 255, 0);
+    text-shadow: 0 0 20px rgba(26, 212, 196, 0.563), 0 0 40px rgba(9, 16, 216, 0.949);
+    font-size: 50px;
+    -webkit-text-stroke: 1px white; 
+}
+
+#firstPage h1:hover{
+    text-shadow: 0 0 20px rgb(160, 72, 13), 0 0 40px rgb(216, 33, 9); 
+}
+
+
+
+/*-------------------- FIRST PAGE DECLARATION -------------------*/
+
+
+
+/*-------------------- SECOND PAGE DECLARATION -------------------*/
+
+
+
+
+@keyframes rot{
+  0%{ transform: rotateY(0deg);}
+  50%{ transform: rotateY(180deg);}
+  
+}
+
+
+.aboutImg{
+    height: 400px;
+    float: left;
+    margin: 20px;
+    border-radius: 50px 0px 50px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.37);
+    box-shadow: 10px 10px 10px black;
+    
+   
+}
+
+.aboutPara{
+    margin: 0px 20px 50px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+
+.memberPic{
+    height: 300px;
+    width: 250px;
+    margin: 0px 20px 20px 20px;
+    border: 3px solid rgba(223, 131, 10, 0.86);
+    border-radius: 50px 0px 50px 0px;
+    box-shadow: 10px 10px 10px black;
+    background-size: cover;
+    background-position: center center;
+}
+
+#member01 .memberPic{
+    background-image: url(images/archi.jpeg);
+}
+
+#member02 .memberPic{
+    background-image: url(images/kartikeyAnime.png);
+}
+
+#member03 .memberPic{
+    background-image: url(images/ManavAnime.png);
+}
+
+#member04 .memberPic{
+    background-image: url(images/devansh.jpeg);
+    background-position: center center;
+}
+
+.memberCard:hover .memberPic{
+    animation-name: rot;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    border-radius: 100%;
+    transition: 400ms ease-in-out;
+}
+
+.memberHeading{
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+    text-shadow: 
+    0 0 0px rgba(153, 13, 160, 0), 
+    0 0 10px rgba(183, 16, 16, 0), 
+    0 0 20px rgb(160, 13, 13), 
+    0 0 40px rgba(216, 9, 9, 0.949);
+   
+}
+
+.memberPara{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.memberContent{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+
+
+.memberCard{
+    display: flex;
+    box-sizing: border-box;
+    padding: 0px 20px 100px 20px;
+
+}
+
+.mobileContainer{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    display: none;
+}
+
+.mobileContainer hr{
+    height: 1px;
+    border: 1px solid rgb(249, 249, 249);
+    box-sizing: border-box;
+    width: 30px;
+    margin: 3px 0px 3px 0px;
+    transition: 200ms ease-in-out;
+}
+
+
+
+@media screen and (max-width:780px){
+    
+    header{
+      height: fit-content;
+    }
+
+    header nav .menu{
+        display: none;
+    }
+
+    .mobileMenu{
+        flex-direction: column;
+        height: 100vh;
+        border-radius: 0px;
+        justify-content: center;
+        width: 100vw;
+        background: black;
+        position: absolute;
+        left: 0px;
+        top:0px;
+        display: flex;
+        z-index: -1;
+        border: none;
+    }
+
+   .aboutImg{
+     height: 50vw;
+
+   }
+
+   .aboutPara{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+   }
+
+   .memberContent{
+      text-align: center;
+   }
+
+    header nav ul li{
+        border: none;
+        width: 50%; 
+    }
+
+   
+
+    header nav .mobileContainer{
+        display: flex;
+    }
+    .memberCard{
+        flex-direction: column;
+        align-items: center;
+    }
+    #firstPage{
+        justify-content: center;
+    }
+   
+    .pageHeading{
+        width: 100%;
+        text-align: center;
+    }
+    
+    #firstPage #homeHeading{
+       font-size: 7vw;
+       margin: 5vh 0px 5vh 0px;
+    }
+
+    #firstPage #homeVid{
+      width: 50vw;
+      height: 50vw;
+      margin: 10vw 0px 0px 0px;
+   
+    }
+
+}
+
+
+
+
