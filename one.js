@@ -45,7 +45,7 @@ function start(){
  
 
   if(totalMoves>0){
-    moves.textContent = `Moves Left : ${--totalMoves}/3`;
+    moves.textContent = `Moves: ${--totalMoves}/3`;
     screen.style.animationName = "shaking";
     choosenBox[0].style.pointerEvents = "auto";
     choosenBox[1].style.pointerEvents = "auto";
