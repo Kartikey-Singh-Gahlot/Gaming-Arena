@@ -124,6 +124,8 @@ function start(){
 
 btn.addEventListener("click", start);
 
+
+   
 // ---------------< NAVBAR SCRIPT >------------
 
 
