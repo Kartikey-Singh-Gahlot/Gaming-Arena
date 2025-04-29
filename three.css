@@ -7,21 +7,80 @@ body{
     height: 100vh;
     background: linear-gradient(90deg, #0f0c29,#302b63,#24243e);
     width: 100vw;
-    padding: 1vh 1vw 1vh 1vw;
     position: relative;
     overflow: hidden;
-}
-
-#brdr{
     box-sizing: border-box;
-    border: 1px solid rgba(255, 255, 255, 0.395);
-    position: absolute;
     height: 98vh;
-    width: 98vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
+
+a{
+    text-decoration: none;
+  }
+  
+header{
+    z-index: 10;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+}
+  
+  header nav{
+    display: flex;
+    justify-content: right;
+    padding:10px 10px 0px 0px;
+  }
+  
+  
+  
+  header nav ul{
+    list-style-type: none;
+    margin: 0px 20px 0px 10px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.363);
+    border: 1px solid rgba(255, 255, 255, 0.215);
+    box-sizing: border-box;
+    box-shadow: 10px 10px 20px black;
+    height: fit-content;
+    width: fit-content;
+    border-radius:5px;
+  }
+  
+  
+  header nav ul li{
+    padding: 5px 25px 5px 25px;
+    color: white;
+    font-size: 20px;
+    font-family: "Orbitron";
+  }
+  
+  li:hover{
+    background-color: #c31431e0;
+  }
+  
+  .mobileContainer{
+    display: none;
+    margin: 0px 0px 0px 0px ;
+  }
+  
+  .mobileContainer hr{
+    
+    height: 1px;
+    border: 1px solid rgb(249, 249, 249);
+    box-sizing: border-box;
+    width: 30px;
+  }
+  .lines{
+    transition: 200ms ease-in-out;
+  }
+
+
 
 #coinstrip{
     height: fit-content;
@@ -33,8 +92,8 @@ body{
 
 
 .coin{
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     text-align: center;
     border-radius: 100%;
     text-shadow: 2px 2px 2px black;
@@ -54,7 +113,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
-    font-size:6vw;
+    font-size:300%;
     text-shadow: 2px 2px 2px black;
 }
 
@@ -72,7 +131,7 @@ body{
 
 
 #face{
-    font-size: 15vw;
+    font-size: 500%;
     filter: drop-shadow(5px 5px 2px black);
     transition: 1000ms ease-in-out;
 }
@@ -113,67 +172,49 @@ button:hover{
 }
 
 
-@media screen and  (max-width:780px){
-   .coin{
-    width:50vw;
-    height:50vw;
-   } 
 
-   #buttonstrip button{
-    margin: 10px;
-   }
-}
-header{
-    position: fixed;
-    height: 100px;
+
+@media screen and (max-width:780px){
+ .coin{
+    height: 200px;
+    width: 200px;
+ }
+ #face{
+    font-size: 300%;
+ }
+
+ #headng{
+    font-size: 10vw;
+ }
+
+
+ header nav ul{
+    display: none;
+    height: 100%;
     width: 100%;
-    display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    z-index: 10;
-    justify-content: space-between;
- 
-    margin-bottom: 50px;
-    
-}
+    border: none;
+  }
 
+  header nav ul li{
+    margin: 10px;
+    width: 60vw;
+  }
 
-header img{
-    height: 50px;
-    margin: 10px 0px 0px 10px ;
-}
+  header nav{
+   flex-direction: column;
+   align-items: end;
+  }
 
-
-header nav{
- width: fit-content;
- height: fit-content;
- margin: 0px 20px 0px 0px;
- z-index: -5;
- 
-}
-
-header nav ul{
+  .mobileContainer{
     display: flex;
-    list-style-type: none;
-    background: linear-gradient(90deg, rgb(6, 7, 60),rgb(146, 8, 123),rgb(10, 139, 231));
-    width: fit-content;
-    padding: 0px 30px 0px 30px ;
-    border-radius: 50px 0px 50px 0px;
-    box-shadow:  10px 10px 50px black;
-    border: 1px solid rgba(244, 244, 244, 0.347);
-
-}
-
-header nav ul li{
-    padding: 5px 30px 5px 30px;
-    font-size: 20px;
-    color: white;
-    border-left: 1px solid rgba(255, 255, 255, 0.325);
-    border-right: 1px solid rgba(255, 255, 255, 0.325);
-}
-
-header nav ul li:hover{
-      background-color: rgba(239, 235, 235, 0.248);
-      color: black;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20px;
+    top: 10px;
+  }
 }
 
 
