@@ -1,0 +1,219 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(90deg, #0f0c29,#302b63,#24243e);
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 98vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+a{
+    text-decoration: none;
+  }
+  
+header{
+    z-index: 10;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+  
+  header nav{
+    display: flex;
+    justify-content: right;
+    padding:10px 10px 0px 0px;
+  }
+  
+  
+  
+  header nav ul{
+    list-style-type: none;
+    margin: 0px 20px 0px 10px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.363);
+    border: 1px solid rgba(255, 255, 255, 0.215);
+    box-sizing: border-box;
+    box-shadow: 10px 10px 20px black;
+    height: fit-content;
+    width: fit-content;
+    border-radius:5px;
+  }
+  
+  
+  header nav ul li{
+    padding: 5px 25px 5px 25px;
+    color: white;
+    font-size: 20px;
+    font-family: "Orbitron";
+  }
+  
+  li:hover{
+    background-color: #c31431e0;
+  }
+  
+  .mobileContainer{
+    display: none;
+    margin: 0px 0px 0px 0px ;
+  }
+  
+  .mobileContainer hr{
+    
+    height: 1px;
+    border: 1px solid rgb(249, 249, 249);
+    box-sizing: border-box;
+    width: 30px;
+  }
+  .lines{
+    transition: 200ms ease-in-out;
+  }
+
+
+
+#coinstrip{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+.coin{
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    border-radius: 100%;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    border: 5px double black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    backface-visibility: hidden;
+    background: radial-gradient(#b0aa70,#35270b);
+    box-shadow: 5px 5px 10px inset black, -5px -5px 10px inset black, 20px 20px 50px black; 
+}
+
+
+#headng{
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size:160%;
+    text-shadow: 2px 2px 2px black;
+}
+
+#buttonstrip{ 
+
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#buttonstrip button{
+    font-size: 3vh;
+}
+
+
+#face{
+    font-size: 500%;
+    filter: drop-shadow(5px 5px 2px black);
+    transition: 1000ms ease-in-out;
+}
+
+
+
+.control{
+    height: 8vh;
+    width: 30%;
+    font-size: 30px;
+    background: radial-gradient( #c31432,#240b36);
+    color:white;
+    border: 1px inset rgba(255, 255, 255, 0.312);
+    box-shadow: 10px 10px 20px black;
+    border-radius: 10px;
+    text-shadow: 2px 2px 2px black;
+}
+
+button:hover{
+    background: none;
+    background-color: rgb(255, 4, 0);
+    color:black;
+    text-shadow: none;
+} 
+
+
+#front{
+    animation-name: none;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    transition: 400ms ease-in-out;
+}
+
+@keyframes flipping{
+    from{transform: rotateX(0deg) scale(1);}
+    to{transform: rotateX(2160deg) scale(1.2);}
+}
+
+
+
+
+@media screen and (max-width:780px){
+ .coin{
+    height: 200px;
+    width: 200px;
+ }
+ #face{
+    font-size: 300%;
+ }
+
+
+
+ header nav ul{
+    display: none;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+  }
+
+  header nav ul li{
+    margin: 10px;
+    width: 60vw;
+  }
+
+  header nav{
+   flex-direction: column;
+   align-items: end;
+  }
+
+  .mobileContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20px;
+    top: 10px;
+  }
+}
+
+
