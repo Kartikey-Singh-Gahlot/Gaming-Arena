@@ -1,6 +1,5 @@
 const control = document.getElementById("control");
 const headng = document.getElementById("headng");
-const sound = document.getElementById("sound");
 const front = document.getElementById("front");
 const choices=["Heads", "Tales"];
 const face=document.getElementById("face");
@@ -19,8 +18,6 @@ function flip(){
  
 front.style.animationName="flipping";
 face.textContent=" ";
-sound.play();
-
 
 
 setTimeout(()=>{
