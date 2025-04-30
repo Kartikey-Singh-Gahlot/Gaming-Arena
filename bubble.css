@@ -12,11 +12,12 @@ html,body{
 #main{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: top;
+    gap: 60px;
     width: 100%;
     height: 100%;
     background:linear-gradient( to right , lightgreen,lightblue) ;
-    
+    flex-direction: column;   
 }
 #panel{
     overflow: hidden;
@@ -77,50 +78,111 @@ html,body{
 }
 a{
     text-decoration: none;
-} 
-header{
-    position: fixed;
-    width: 100%;
+  }
+  
+  header{
     z-index: 10;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(1,1fr);
     height: fit-content;
-    top: 10px;
-
-}
-header #heading{
+    position: relative;
     width: 100%;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 0px 50px 0px 0px;
-} 
-header nav{
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
-}
-header nav ul{
+  }
+  
+  header nav{
+    display: flex;
+    justify-content: right;
+    padding:10px 10px 0px 0px;
+  }
+  
+  
+  
+  header nav ul{
     list-style-type: none;
     margin: 0px 20px 0px 10px;
     display: flex;
-    background-color: black;
-    border: 1px solid rgba(255, 255, 255, 0.215);
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.814);
     box-sizing: border-box;
-    border-radius: 5px;
-}
+    height: fit-content;
+    width: fit-content;
+    border-radius:5px;
+    font-family: "orbitron";
+  }
   
   
-header nav ul li{
-    padding: 3px 20px 3px 20px;
+  header nav ul li{
+    padding: 5px 25px 5px 25px;
     color: white;
     font-size: 20px;
-    border-radius: 5px;
-}
+    font-family: "Orbitron";
+  }
   
-li:hover{
-    background-color: white;
-    color: black;
-}
+  li:hover{
+    background-color: #c31431e0;
+  }
+  
+  .mobileContainer{
+    display: none;
+    margin: 0px 0px 0px 0px ;
+  }
+  
+  .mobileContainer hr{
+    
+    height: 1px;
+    border: 1px solid rgb(232, 9, 9);
+    box-sizing: border-box;
+    width: 30px;
+  }
+  .lines{
+    transition: 200ms ease-in-out;
+  }
+
+  @media screen and (max-width:780px) {
+    header nav ul{
+      display: none;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      border: none;
+    }
+  
+    header nav ul li{
+      margin: 10px;
+      width: 60vw;
+    }
+  
+    header nav{
+     flex-direction: column;
+     align-items: end;
+    }
+  
+    .mobileContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 20px;
+      top: 10px;
+    }
+    .opton02{
+      height: 100px;
+      width: 120px;
+    }
+    .opton{
+      font-size: 20px;
+    }
+    button{
+      font-size: 20px;
+    }
+    .scoreBoard{
+      font-size: 20px;
+    }
+  }
+  
+  
+  
   
 
