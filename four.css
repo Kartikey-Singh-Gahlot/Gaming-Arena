@@ -1,0 +1,219 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    color: white;
+    overflow: hidden;
+    background:linear-gradient(90deg,#0f0c29,#302b63,#24243e);
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+
+.strip{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#heading{
+    text-align: center;
+    width: 100%;
+   
+    box-sizing: border-box;
+    padding: 0px 20px 0px 20px ;
+}
+
+a{
+    text-decoration: none;
+  }
+  
+  header{
+    z-index: 10;
+    height: fit-content;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  
+  header nav{
+    display: flex;
+    justify-content: right;
+    padding:10px 10px 0px 0px;
+  }
+  
+  
+  
+  header nav ul{
+    list-style-type: none;
+    margin: 0px 20px 0px 10px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.363);
+    border: 1px solid rgba(255, 255, 255, 0.215);
+    box-sizing: border-box;
+    box-shadow: 10px 10px 20px black;
+    height: fit-content;
+    width: fit-content;
+    border-radius:5px;
+  }
+  
+  
+  header nav ul li{
+    padding: 5px 25px 5px 25px;
+    color: white;
+    font-size: 20px;
+    font-family: "Orbitron";
+  }
+  
+  li:hover{
+    background-color: #c31431e0;
+  }
+  
+  .mobileContainer{
+    display: none;
+    margin: 0px 0px 0px 0px ;
+  }
+  
+  .mobileContainer hr{
+    
+    height: 1px;
+    border: 1px solid rgb(249, 249, 249);
+    box-sizing: border-box;
+    width: 30px;
+  }
+  .lines{
+    transition: 200ms ease-in-out;
+  }
+  
+
+#coveringBox{
+    background-color: brown;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px black inset;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+
+
+#coveringBox h1{
+    text-align: center;
+    width: 100%; 
+}
+
+#innerBox{
+    background-color: rgb(241, 143, 16);
+    border: 4px solid rgb(41, 39, 39);
+    outline: 2px solid black;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 10;
+    top:0px;
+    background-image: url(images/monkey_face.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 400ms ease-in-out;
+    animation-name: none;
+    animation-duration: 1200ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes shaking{
+  0%{transform: rotate(-40deg);}
+  10%{transform: rotate(40deg);}
+  20%{transform: rotate(-40deg);}
+  30%{transform: rotate(40deg);}
+  40%{transform: rotate(-40deg);}
+  50%{transform: rotate(40deg);}
+}
+
+
+button{
+    height: 50px;
+    width: 100px;
+    background-color: rgb(249, 126, 3);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+}
+
+input::placeholder{
+   text-align: center; 
+   color: black;
+}
+
+input{
+  height: 50px;
+  width: 300px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 5px 5px 6px inset, 0px -1px 5px black inset;
+}
+
+#buttonStrip{
+
+   justify-content: center;
+   gap: 10%;
+}
+
+
+@media screen and (max-width:780px) {
+    header nav ul{
+      display: none;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      border: none;
+    }
+  
+    header nav ul li{
+      margin: 10px;
+      width: 60vw;
+    }
+  
+    header nav{
+     flex-direction: column;
+     align-items: end;
+    }
+  
+    .mobileContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 20px;
+      top: 10px;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    #buttonStrip{
+        font-size: 10px;
+        gap :15px;
+    }
+
+    button{
+        height: 30px;
+    }
+}
