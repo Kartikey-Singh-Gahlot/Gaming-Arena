@@ -1,10 +1,10 @@
 const mobBtn = document.querySelector(".mobileContainer");
 const ull = document.querySelector("ul");
-const ad = document.querySelector("audio");
 const hr1 = document.querySelector("#one");
 const hr2 = document.querySelector("#two");
 const hr3 = document.querySelector("#three");
 const bdy = document.body;
+
 
 
 window.addEventListener('resize', () => {
