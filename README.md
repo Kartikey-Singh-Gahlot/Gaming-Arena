@@ -1,25 +1,29 @@
 # Gaming Arena
 
-Gaming Arena is a web-based project that features four interactive games developed using HTML, CSS, and JavaScript. It is collaboratively built by four friends, showcasing unique gameplay experiences in each game.
+Gaming Arena is a web-based project that brings an one and all platform for fun mini games.
 
 
 # Games Included:
 
-1. Tossing Coin Game
+1. Guessing the Card Game
+
+   Test your luck by guessing the card that will be  drwan randomly
+   
+
+2. Bubble Guessing Game
+
+   Pop the right bubbles based on the hints given to score points.
+   
+   
+3. Tossing Coin Game
 
    A simple yet engaging game where you toss a virtual coin and get random outcomes: Heads or Tails.
 
-2. Guessing the Card Game
 
-   Test your luck by guessing the card that will be drawn from a shuffled deck.
-
-3. Bubble Guessing Game
-
-   Pop the right bubbles based on the hints given to score points.
-
-4. Guessing the Number Game**
+4. Guessing the Number Game
 
    Try to guess the randomly generated number within a specified range to win.
+
 
 
 # Technologies Used:
@@ -41,15 +45,16 @@ Enjoy the interactive experience and challenge your friends!
 
 # Contributors:
 
-Kartikey Singh Gahlot
+Kartikey Singh Gahlot [Linked In](https://www.linkedin.com/in/kartikey-singh-gahlot-58020124b/)
 Archi Agrawal
 Manav Khandelwal
+Devansh Khandal
 
 
 
 # License:
 
-This project is licensed under the MIT License - see the  file for details.
+This project is licensed under the MIT License - see the  [file](https://github.com/Kartikey-Singh-Gahlot/Gaming-Arena/blob/main/LICENSE) for details.
 
 
 
