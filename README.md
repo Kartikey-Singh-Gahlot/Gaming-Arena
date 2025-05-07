@@ -28,9 +28,9 @@ Gaming Arena is a web-based project that brings an one and all platform for fun 
 
 # Technologies Used:
 
-HTML — For structuring the content.
-CSS — For styling and visual enhancements.
-JavaScript — For game logic and interactivity.
+HTML — For structuring the content.  
+CSS — For styling and visual enhancements.  
+JavaScript — For game logic and interactivity.  
 
 
  
@@ -46,10 +46,9 @@ Enjoy the interactive experience and challenge your friends!
 # Contributors:
 
 [Kartikey Singh Gahlot](https://www.linkedin.com/in/kartikey-singh-gahlot-58020124b/)  
-Archi Agrawal  
-Manav Khandelwal  
-Devansh Khandal
-
+[Archi Agrawal](https://www.linkedin.com/in/archi-agrawal-049a3024b/)  
+[Manav Khandelwal](https://www.linkedin.com/in/manav-khandelwal-178892250/)  
+[Devansh Khandal](https://www.linkedin.com/in/devansh-khandal-/)
 
 
 # License:
