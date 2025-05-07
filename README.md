@@ -37,8 +37,7 @@ JavaScript — For game logic and interactivity.
 
 # How to Play:
 
-Navigate to the game of your choice from the main menu.
-Follow the on-screen instructions to start playing.
+Navigate to the game of your choice from the main menu.  
 Enjoy the interactive experience and challenge your friends!
 
 
@@ -53,7 +52,7 @@ Enjoy the interactive experience and challenge your friends!
 
 # License:
 
-This project is licensed under the MIT License - see the  [file](https://github.com/Kartikey-Singh-Gahlot/Gaming-Arena/blob/main/LICENSE) for details.
+This project is licensed under the MIT License - see the  [License](https://github.com/Kartikey-Singh-Gahlot/Gaming-Arena/blob/main/LICENSE) for details.
 
 
 
