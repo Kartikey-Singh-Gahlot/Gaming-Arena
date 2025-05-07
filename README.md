@@ -45,9 +45,9 @@ Enjoy the interactive experience and challenge your friends!
 
 # Contributors:
 
-Kartikey Singh Gahlot [Linked In](https://www.linkedin.com/in/kartikey-singh-gahlot-58020124b/) "\n"
-Archi Agrawal
-Manav Khandelwal
+[Kartikey Singh Gahlot](https://www.linkedin.com/in/kartikey-singh-gahlot-58020124b/)  
+Archi Agrawal  
+Manav Khandelwal  
 Devansh Khandal
 
 
