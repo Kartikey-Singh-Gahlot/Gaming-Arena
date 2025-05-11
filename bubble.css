@@ -263,6 +263,7 @@ a{
   #ptop {
     flex-direction: column;
     gap: 10px;
+    align-items : left;
   }
 
   .elem {
