@@ -33,32 +33,35 @@
               </nav> 
      </header>
 
-        <div id="panel">
-            <div id="ptop">
-                <div class="elem">
-                    <h4>Hit</h4>
-                    <div id="hitval" class="box">5</div>
-                </div>
-                <div class="elem">
-                    <h4>Timer</h4>
-                    <div id="timerval" class="box"></div>
-                </div>
-                <div class="elem">
-                    <h4>Score</h4>
-                    <div id="scoreval" class="box">0</div>
-                </div>
-            </div>
-            <div id="pbottom">
-                
-            </div>
-        </div>
+<div id="main">
+    <div id="start-screen">
+      <h1>Welcome to the Bubble Game</h1>
+      <button id="start-btn">Start Game</button>
     </div>
-
-    <script src="bubble.js">
-    </script>
-    <script src="one.js">
-
-    </script>
+    <div id="panel" class="hidden">
+      <div id="ptop">
+        <div class="elem">
+          <h4>Hit</h4>
+          <div id="hitval" class="box">0</div>
+        </div>
+        <div class="elem">
+          <h4>Timer</h4>
+          <div id="timerval" class="box">30</div>
+        </div>
+        <div class="elem">
+          <h4>Score</h4>
+          <div id="scoreval" class="box">0</div>
+        </div>
+      </div>
+      <div id="pbottom"></div>
+    </div>
+</div>
+        
+<script src="bubble.js">
+</script>
+    
+<script src="one.js">
+</script>
 
   
 
