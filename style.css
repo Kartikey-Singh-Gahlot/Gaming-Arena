@@ -180,7 +180,7 @@ header nav ul li:hover{
 .aboutPara{
     margin: 0px 20px 50px 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: left;
+    text-align: justify;
 }
 
 
@@ -241,7 +241,7 @@ header nav ul li:hover{
 
 .memberContent{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: left;
+    text-align: justify;
 }
 
 
@@ -304,15 +304,11 @@ header nav ul li:hover{
    }
 
    .aboutPara{
-    text-align: justified;
     justify-content: center;
     display: flex;
     flex-direction: column;
    }
 
-   .memberContent{
-      text-align: justified;
-   }
 
     header nav ul li{
         border: none;
