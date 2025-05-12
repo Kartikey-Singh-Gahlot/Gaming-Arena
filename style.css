@@ -304,14 +304,14 @@ header nav ul li:hover{
    }
 
    .aboutPara{
-    text-align: center;
+    text-align: justified;
     justify-content: center;
     display: flex;
     flex-direction: column;
    }
 
    .memberContent{
-      text-align: center;
+      text-align: justified;
    }
 
     header nav ul li{
